@@ -1,0 +1,13 @@
+FROM gradle:8.10-jdk21-alpine as builder
+
+WORKDIR /AzureCourseNote
+COPY ./springboot /AzureCourseNote/springboot
+COPY ./build.gradle.kts /AzureCourseNote
+COPY ./settings.gradle.kts /AzureCourseNote
+RUN gradle :springboot:build
+
+FROM eclipse-temurin:21.0.4_7-jre-alpine
+COPY --from=builder /AzureCourseNote/springboot/build/libs/springboot-1.0.jar .
+EXPOSE 80
+ENV SERVER_PORT=80
+CMD ["java", "-jar", "springboot-1.0.jar"]
