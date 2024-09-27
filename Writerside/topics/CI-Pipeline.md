@@ -10,3 +10,13 @@ But it's no matter. We can use GitHub for this purpose as well.
 
 ## Create the basic pipeline.
 
+### Variables
+
+There are many predefined variables we can use.
+
+* [Use predefined variables](https://learn.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)
+
+| Variable                       | Description | Example Value       |
+|--------------------------------|-------------|---------------------|
+| build.artifactstagingdirectory |             | /home/vsts/work/1/a |
+| system.defaultworkingdirectory |             |                     |
