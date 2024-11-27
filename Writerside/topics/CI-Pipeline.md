@@ -19,4 +19,4 @@ There are many predefined variables we can use.
 | Variable                       | Description | Example Value       |
 |--------------------------------|-------------|---------------------|
 | build.artifactstagingdirectory |             | /home/vsts/work/1/a |
-| system.defaultworkingdirectory |             |                     |
+| system.defaultworkingdirectory |             | /home/vsts/work/1/a |
