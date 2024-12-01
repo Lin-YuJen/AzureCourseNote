@@ -6,7 +6,9 @@ In Azure, we can clone the source code into the repository provided by the platf
 
 ![Step_of_import_file.png](Step_of_import_file.png)
 
-## Create the basic pipeline.
+## First lab: Create the basic CI pipeline.
+
+* [Lab 1](https://hackmd.io/@twdeveloper/SJDxACbhR#Lab-1-Create-a-pipeline)
 
 ### Variables
 
@@ -24,7 +26,7 @@ There are many predefined variables we can use.
 ### Sample console output of running pipeline
 
 The following content is one of the histories of my pipeline.
-I think it may help who never use the Azure DevOps platform before
+I think it may help who have never used the Azure DevOps platform before
 to quickly understand what the default tasks of the pipeline have done for you.
 
 #### Checkout Lin-YuJen/AzureCourseNote@master to s
@@ -35,9 +37,9 @@ to quickly understand what the default tasks of the pipeline have done for you.
 
 > Skip, not important.
 
-#### Copy Files to: $(build.artifactstagingdirectory)
+#### Copy Files to: `$(build.artifactstagingdirectory)`
 
-The value of `build.artifactstagingdirectory` is `/home/vsts/work/1/a`
+* The value of `build.artifactstagingdirectory` is `/home/vsts/work/1/a`
 
 ```text
 Starting: Copy Files to: /home/vsts/work/1/a
@@ -54,9 +56,9 @@ Copying /home/vsts/work/1/s/springboot/build/libs/springboot-1.0.jar to /home/vs
 Finishing: Copy Files to: /home/vsts/work/1/a
 ```
 
-#### Publish Artifact: drop ($(build.artifactstagingdirectory))
+#### Publish Artifact: drop (`$(build.artifactstagingdirectory)`)
 
-The value of `build.artifactstagingdirectory` is `/home/vsts/work/1/a`
+* The value of `build.artifactstagingdirectory` is `/home/vsts/work/1/a`
 
 ```text
 Starting: Publish Artifact: drop (/home/vsts/work/1/a)
@@ -76,9 +78,9 @@ Async Command End: Upload Artifact
 Finishing: Publish Artifact: drop (/home/vsts/work/1/a)
 ```
 
-#### Azure App Service Deploy: SpringBoot3 in $(System.DefaultWorkingDirectory)
+#### Azure App Service Deploy: SpringBoot3 in `$(System.DefaultWorkingDirectory)`
 
-The value of `System.DefaultWorkingDirectory` is `/home/vsts/work/1/s`
+* The value of `System.DefaultWorkingDirectory` is `/home/vsts/work/1/s`
 
 ```text
 Starting: Azure App Service Deploy: SpringBoot3 in /home/vsts/work/1/s
@@ -113,3 +115,33 @@ Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199
 Cleaning any cached credential from repository: Lin-YuJen/AzureCourseNote (GitHub)
 Finishing: Checkout Lin-YuJen/AzureCourseNote@master to s
 ```
+
+## Create PR (pull request) pipeline
+
+The trigger of the CI pipeline is the time that **we merge the branch**.
+The trigger of the PR pipeline will be when we **create a new pull request**.
+
+We should set the trigger of the PR pipeline in `main` branch instead of the merged branch.
+
+> main branch => Branch policies => Policies => Build Validation => Add build policy
+
+![Trigger_PR_Pipeline_01.png](Trigger_PR_Pipeline_01.png)
+
+![Trigger_PR_Pipeline_02.png](Trigger_PR_Pipeline_02.png)
+
+![Trigger_PR_Pipeline_03](Trigger_PR_Pipeline_03.png)
+
+## Other labs
+
+There are over 10 labs in this course. It's not possible to demonstrate all labs here.
+
+I just list other labs here.
+If you are interested in these labs, you can check them in [here](https://hackmd.io/@twdeveloper/SJDxACbhR)
+
+1. Lab 1: Create a pipeline
+2. Lab 2: CI & Deploy to Web App
+3. Lab 3: GitHub Flow & PR
+4. Lab 4: PR-Pipeline
+5. Lab 5: SonarCloud
+6. Lab 6: Package Scan
+7. **Lab 7: AI Code Review (GPT Reviewer)**

@@ -31,21 +31,24 @@ To make our delivery more frequently, let's think about our branch strategy we u
 
 Consider these two aspects:
 
-### Number of the branch
+### Number of the branches
 
 1. Less of the branches, less of the works when we merge the branch.
-    - Confliction.
+    - Conflicts.
 
 ### Life cycle of the branch
 
-1. The Long life cycle of the branch means that 
-    - There may be many code changing haven't been merged.
+The Long life cycle of the branch means that 
+1. There may be many code changing haven't been merged.
+   - spend more time handling conflicts during the merger.
 
 ### Extreme case
 
 > There is no other branch excepting the `main` branch.
 
 ### Trunk-Based Development
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20231227132753/Trunk-Based-Development.jpg)
 
 * [團隊的 GIT 分支管理策略 (3) ： 持續整合以及相關比較](https://medium.com/%E5%93%88%E5%98%8D-%E4%B8%96%E7%95%8C/%E5%9C%98%E9%9A%8A%E7%9A%84-git-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5-3-%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88%E4%BB%A5%E5%8F%8A%E7%9B%B8%E9%97%9C%E6%AF%94%E8%BC%83-59b80a29c997)
 * [淺談開發流程 — Git Flow 到 Trunk-Based Development 的團隊經驗雜談](https://medium.com/@shanpigliao/%E6%B7%BA%E8%AB%87%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B-git-flow-%E5%88%B0-trunk-based-development-%E7%9A%84%E5%9C%98%E9%9A%8A%E7%B6%93%E9%A9%97%E9%9B%9C%E8%AB%87-a956a379987)
