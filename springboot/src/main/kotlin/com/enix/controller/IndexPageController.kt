@@ -11,7 +11,7 @@ class IndexPageController {
 
     private val beanCreateTime = LocalDateTime.now()
 
-    private val datatimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+    private val datetimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
 
     /**
      * index.html page
@@ -20,9 +20,11 @@ class IndexPageController {
      */
     @GetMapping("/")
     fun index(model: Model): String {
-        model.addAttribute("name", "Enix")
-        model.addAttribute("beanCreateTime", datatimeFormatter.format(beanCreateTime))
-        model.addAttribute("randomNumber", (0..100).random())
+        model.apply {
+            addAttribute("name", "Enix")
+            addAttribute("beanCreateTime", datetimeFormatter.format(beanCreateTime))
+            addAttribute("randomNumber", (0..100).random())
+        }
         return "index"
     }
 
