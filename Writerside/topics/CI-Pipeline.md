@@ -6,9 +6,15 @@ In Azure, we can clone the source code into the repository provided by the platf
 
 ![Step_of_import_file.png](Step_of_import_file.png)
 
-## First lab: Create the basic CI pipeline.
+## First lab: Create a basic CI pipeline.
 
 * [Lab 1](https://hackmd.io/@twdeveloper/SJDxACbhR#Lab-1-Create-a-pipeline)
+
+There are two ways to create the pipeline.
+1. Classic editor
+2. YAML file
+
+![](https://hackmd.io/_uploads/SkROlEEHT.png)
 
 ### Variables
 
@@ -82,6 +88,9 @@ Finishing: Publish Artifact: drop (/home/vsts/work/1/a)
 
 * The value of `System.DefaultWorkingDirectory` is `/home/vsts/work/1/s`
 
+You can create a web application service on [Azure Portal](https://portal.azure.com/),
+then you can deploy your app.
+
 ```text
 Starting: Azure App Service Deploy: SpringBoot3 in /home/vsts/work/1/s
 ==============================================================================
@@ -121,9 +130,9 @@ Finishing: Checkout Lin-YuJen/AzureCourseNote@master to s
 The trigger of the CI pipeline is the time that **we merge the branch**.
 The trigger of the PR pipeline will be when we **create a new pull request**.
 
-We should set the trigger of the PR pipeline in `main` branch instead of the merged branch.
+We should set the trigger of the PR pipeline in the `main` branch instead of the merged branch.
 
-> main branch => Branch policies => Policies => Build Validation => Add build policy
+> main branch ⇒ Branch policies ⇒ Policies ⇒ Build Validation ⇒ Add build policy
 
 ![Trigger_PR_Pipeline_01.png](Trigger_PR_Pipeline_01.png)
 
@@ -135,7 +144,7 @@ We should set the trigger of the PR pipeline in `main` branch instead of the mer
 
 There are over 10 labs in this course. It's not possible to demonstrate all labs here.
 
-I just list other labs here.
+I just list other lab names here.
 If you are interested in these labs, you can check them in [here](https://hackmd.io/@twdeveloper/SJDxACbhR)
 
 1. Lab 1: Create a pipeline

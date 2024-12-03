@@ -20,7 +20,7 @@ Please install this plugin first.
 
 1. Create a new PR-pipeline first by following the previous chapter.
 
-You must have completed the following configuration before executing the pipeline.
+You must complete the following configuration before executing the pipeline.
 
 1. Get the API key
     - You need to get your own OpenAI key for using this function.

@@ -53,3 +53,7 @@ The Long life cycle of the branch means that
 * [團隊的 GIT 分支管理策略 (3) ： 持續整合以及相關比較](https://medium.com/%E5%93%88%E5%98%8D-%E4%B8%96%E7%95%8C/%E5%9C%98%E9%9A%8A%E7%9A%84-git-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5-3-%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88%E4%BB%A5%E5%8F%8A%E7%9B%B8%E9%97%9C%E6%AF%94%E8%BC%83-59b80a29c997)
 * [淺談開發流程 — Git Flow 到 Trunk-Based Development 的團隊經驗雜談](https://medium.com/@shanpigliao/%E6%B7%BA%E8%AB%87%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B-git-flow-%E5%88%B0-trunk-based-development-%E7%9A%84%E5%9C%98%E9%9A%8A%E7%B6%93%E9%A9%97%E9%9B%9C%E8%AB%87-a956a379987)
 * [技術文章筆記：Feature Toggles (aka Feature Flag)](https://alfredkai.medium.com/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0%E7%AD%86%E8%A8%98-feature-toggles-aka-feature-flag-d52c7f5bc78e)
+
+## Branch structure
+
+![](BranchStructure.jpg)
