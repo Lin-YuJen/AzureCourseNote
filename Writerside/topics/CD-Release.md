@@ -1,5 +1,7 @@
 # CD &amp; Release
 
+![release_deployment.png](release_deployment.png)
+
 ## Create a basic release pipeline
 
 [Lab 8](https://hackmd.io/@twdeveloper/SJDxACbhR#Lab-8--CD--Release-pipeline)

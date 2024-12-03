@@ -27,6 +27,13 @@ There are many predefined variables we can use.
 | build.artifactstagingdirectory | The local path on the agent where any artifacts are copied to before being pushed to their destination. | /home/vsts/work/1/a |
 | system.defaultworkingdirectory | The local path on the agent where your source code files are downloaded.                                | /home/vsts/work/1/s |
 
+### Configuration example
+
+1. Azure App Service deploy
+    - App Service type: `Web App on Linux`
+    - Package or folder: `$(System.DefaultWorkingDirectory)/**/springboot-1.0.jar`
+        * Default value is `*.zip`
+
 ## Run the pipeline
 
 ### Sample console output of running pipeline
