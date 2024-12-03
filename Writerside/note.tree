@@ -4,11 +4,12 @@
 
 <instance-profile id="note"
                  name="CourseNote"
-                 start-page="starter-topic.md">
+                 start-page="Agile-DevOps-Course.md">
 
     <toc-element topic="Agile-DevOps-Course.md"/>
     <toc-element topic="Agile.md"/>
     <toc-element topic="CI-Pipeline.md"/>
+    <toc-element topic="Lab-AI-Code-Review.md"/>
     <toc-element topic="CD-Release.md"/>
     <toc-element topic="starter-topic.md"/>
 </instance-profile>

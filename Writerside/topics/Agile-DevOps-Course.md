@@ -13,5 +13,8 @@ You can access the following link to check the note written by the trainer.
 ![AzureHomePage.png](AzureHomePage.png)
 
 2. [Azure DevOps Service](https://dev.azure.com/)
+    - [Azure DevOps 的定價](https://azure.microsoft.com/zh-tw/pricing/details/devops/azure-devops-services/)
+        * Click `開始免費使用`
 
 ![AzureDevOpsHomePage.png](AzureDevOpsHomePage.png)
+![AzureDevOpsPricingPage.png](AzureDevOpsPricingPage.png)
