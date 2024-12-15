@@ -10,4 +10,8 @@
         <description>Created after removal of "Lab" from CourseNote</description>
         <accepts>Lab.html</accepts>
     </rule>
+    <rule id="e45e82d">
+        <description>Created after removal of "About CourseNote" from CourseNote</description>
+        <accepts>starter-topic.html</accepts>
+    </rule>
 </rules>
